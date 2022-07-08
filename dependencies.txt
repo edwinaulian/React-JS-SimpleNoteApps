@@ -1,0 +1,5 @@
+- npm install react-bootstrap bootstrap
+https://react-bootstrap.netlify.app/getting-started/introduction/
+
+- npm install web-vitals
+- npm install react-router-dom --save
