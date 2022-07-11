@@ -3,3 +3,5 @@ https://react-bootstrap.netlify.app/getting-started/introduction/
 
 - npm install web-vitals
 - npm install react-router-dom --save
+- npm i auto-bind 
+https://www.npmjs.com/package/auto-bind

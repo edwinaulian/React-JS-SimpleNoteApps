@@ -3,6 +3,7 @@ import { Button } from 'react-bootstrap';
 import Form from 'react-bootstrap/Form';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
+import autoBindReact from 'auto-bind/react';
 
 class NoteInput extends React.Component {
 
@@ -16,9 +17,7 @@ class NoteInput extends React.Component {
             createdAt: '',
             maxExp: 50,
         }
-        this.onSubmitEventHandler = this.onSubmitEventHandler.bind(this);
-        this.onTitleChangeEventHandler = this.onTitleChangeEventHandler.bind(this);
-        this.onNoteChangeEventHandler = this.onNoteChangeEventHandler.bind(this);
+        autoBindReact(this);
     }
 
     render() {

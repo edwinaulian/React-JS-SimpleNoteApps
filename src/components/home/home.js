@@ -3,6 +3,7 @@ import { getInitialData } from '../../utils/index.js';
 import CardContent from './../cardContent/CardContent';
 import CardContentArsip from './../arsip/CardContentArsip';
 import NoteInput from './../formInput/NoteInput';
+import autoBindReact from 'auto-bind/react';
 
 class Home extends React.Component {
 
@@ -12,11 +13,7 @@ class Home extends React.Component {
             notes: getInitialData(),
             archivedNotes: [],
         }
-        this.onAddNoteHandler = this.onAddNoteHandler.bind(this);
-        this.onDeleteNoteHandler = this.onDeleteNoteHandler.bind(this);
-        this.onDeleteArchiveHandler = this.onDeleteArchiveHandler.bind(this);
-        this.onArciveHandler = this.onArciveHandler.bind(this);
-        this.onActiveHandler = this.onActiveHandler.bind(this);
+		autoBindReact(this);
     }
 
     onAddNoteHandler({ title, body }) {
