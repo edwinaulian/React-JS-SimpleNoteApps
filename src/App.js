@@ -12,7 +12,7 @@ function App() {
       <Header/>
       <Routes>
         <Route path='*' element={<NoMatch />}></Route>
-        <Route path='/' exact element={<Home />}  ></Route>
+        <Route path='/' exact element={<Home />}></Route>
         <Route path='about' exact element={<React.Suspense fallback='Loading...'> <LazyAbout /> </React.Suspense>}></Route>
       </Routes>
     </>
